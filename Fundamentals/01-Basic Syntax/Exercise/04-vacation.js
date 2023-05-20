@@ -19,7 +19,7 @@ function vacation(people, group, day) {
             case 'Friday': price = 10.90; break;
             case 'Saturday': price = 15.60; break;
             case 'Sunday': price = 16; break;
-        }    
+        }
     } else if (group === 'Regular') {
         switch (day) {
             case 'Friday': price = 15; break;
@@ -29,7 +29,10 @@ function vacation(people, group, day) {
         if (people >= 10 && people <= 20) {
             price *= 0.95;
         }
-    }  
+    }
+
     console.log(`Total price: ${(price * people).toFixed(2)}`);
+
 }
+
 vacation(30, "Students", "Sunday");

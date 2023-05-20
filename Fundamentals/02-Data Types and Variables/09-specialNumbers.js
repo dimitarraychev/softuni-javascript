@@ -8,10 +8,13 @@ function specialNumbers(num) {
         } else {
             iToStr = i.toString();
             sum = Number(iToStr[0]) + Number(iToStr[1]);
-        }   
+        }
 
         let output = sum === 5 || sum === 7 || sum === 11 ? 'True' : 'False';
+
         console.log(`${i} -> ${output}`);
     }
+    
 }
+
 specialNumbers(15);

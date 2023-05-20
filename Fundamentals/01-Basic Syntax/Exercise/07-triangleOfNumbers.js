@@ -4,13 +4,13 @@ function triangleOfNumbers(num) {
         let result = '';
 
         for (let cols = 1; cols <= rows; cols++) {
-        result += `${rows} `;
+            result += `${rows} `;
         }
 
         console.log(result);
         result = '';
-    
     }
 
 }
+
 triangleOfNumbers(3);

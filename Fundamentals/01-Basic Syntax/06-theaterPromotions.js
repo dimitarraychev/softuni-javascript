@@ -37,8 +37,11 @@ function theaterPromotions(day, age) {
             }
             break;
     }
+
     if (price != 0) {
-    console.log(`${price}$`);
+        console.log(`${price}$`);
     }
+
 }
+
 theaterPromotions('Weekday', 42);

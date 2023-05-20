@@ -1,4 +1,5 @@
 function division(num) {
+
     if (num % 10 === 0) {
         console.log('The number is divisible by 10');
     } else if (num % 7 === 0) {
@@ -12,5 +13,7 @@ function division(num) {
     } else {
         console.log('Not divisible');
     }
+
 }
+
 division(1237);

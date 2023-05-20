@@ -1,4 +1,5 @@
 function monthPrinter(month) {
+
     switch (month) {
         case 1: console.log('January'); break;
         case 2: console.log('February'); break;
@@ -12,8 +13,9 @@ function monthPrinter(month) {
         case 10: console.log('October'); break;
         case 11: console.log('November'); break;
         case 12: console.log('December'); break;
-        default : console.log('Error!'); break;
+        default: console.log('Error!'); break;
     }
+    
 }
 
-monthPrinter(2)
+monthPrinter(2);

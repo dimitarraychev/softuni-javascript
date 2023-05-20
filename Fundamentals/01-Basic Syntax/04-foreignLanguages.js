@@ -1,4 +1,5 @@
 function foreignLanguages(country) {
+
     switch (country) {
         case 'England':
         case 'USA':

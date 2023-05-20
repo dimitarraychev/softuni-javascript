@@ -1,4 +1,5 @@
 function printAndSum(start, end) {
+
     let sum = 0;
     let buff = '';
 
@@ -6,7 +7,10 @@ function printAndSum(start, end) {
         buff += i + ' ';
         sum += i;
     }
+
     console.log(buff);
     console.log(`Sum: ${sum}`);
+
 }
+
 printAndSum(5, 10);
