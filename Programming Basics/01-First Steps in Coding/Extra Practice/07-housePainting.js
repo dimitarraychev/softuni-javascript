@@ -1,4 +1,5 @@
 function housePainting(input) {
+
     let x = Number(input[0]);
     let y = Number(input[1]);
     let h = Number(input[2]);
@@ -8,6 +9,7 @@ function housePainting(input) {
 
     console.log(house / 3.4);
     console.log(roof / 4.3);
+
 }
 
-housePainting(["6", "10", "5.2"])
+housePainting(["6", "10", "5.2"]);

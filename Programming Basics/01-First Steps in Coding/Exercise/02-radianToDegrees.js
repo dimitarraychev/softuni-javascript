@@ -1,4 +1,5 @@
 function radiansToDegrees(input) {
+
     let radian = Number(input[0]);
     let degree = radian * 180 / Math.PI;
 
@@ -6,4 +7,4 @@ function radiansToDegrees(input) {
 
 }
 
-radiansToDegrees(["6.2832"])
+radiansToDegrees(["6.2832"]);

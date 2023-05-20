@@ -1,4 +1,5 @@
 function suppliesForSchool(input) {
+
     let penPacketsCount = Number(input[0]);
     let markerPacketsCount = Number(input[1]);
     let detergentLiters = Number(input[2]);
@@ -11,7 +12,9 @@ function suppliesForSchool(input) {
     let totalPrice = totalPensPrice + totalMarkersPrice + totalDetergentPrice;
     let discount = discountPercent * totalPrice;
     let priceAfterDiscount = totalPrice - discount;
-console.log(priceAfterDiscount);
+
+    console.log(priceAfterDiscount);
+    
 }
 
 suppliesForSchool(["2", "3", "4", "25"]);
