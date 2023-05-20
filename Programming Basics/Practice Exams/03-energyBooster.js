@@ -1,4 +1,5 @@
 function energyBooster(input) {
+
     let fruit = input[0];
     let size = input[1];
     let qty = Number(input[2]);
@@ -41,7 +42,9 @@ function energyBooster(input) {
     } else if (price > 1000) {
         price *= 0.5;
     }
+
     console.log(`${price.toFixed(2)} lv.`);
+    
 }
 
 energyBooster(["Watermelon", "big", "4"]);

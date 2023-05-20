@@ -1,4 +1,5 @@
-function combinations (input) {
+function combinations(input) {
+
     let n = Number(input[0]);
     let combinationsCount = 0;
 
@@ -11,6 +12,7 @@ function combinations (input) {
             }
         }
     }
+    
     console.log(combinationsCount);
 }
 

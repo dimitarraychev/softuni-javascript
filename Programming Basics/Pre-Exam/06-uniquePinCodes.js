@@ -1,4 +1,5 @@
 function uniquePinCodes(input) {
+    
     let n1Cap = Number(input[0]);
     let n2Cap = Number(input[1]);
     let n3Cap = Number(input[2]);
@@ -19,5 +20,5 @@ function uniquePinCodes(input) {
 }
 
 uniquePinCodes(["3",
-"5",
-"5"])
+    "5",
+    "5"])

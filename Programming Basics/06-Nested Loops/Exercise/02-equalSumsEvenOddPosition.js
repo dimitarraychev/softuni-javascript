@@ -1,4 +1,5 @@
 function equalSumsEvenOddPosition(input) {
+
     let start = Number(input[0]);
     let end = Number(input[1]);
     let buffer = "";
@@ -7,7 +8,7 @@ function equalSumsEvenOddPosition(input) {
         let evenSum = 0;
         let oddSum = 0;
         let curNumStr = String(curNum);
-        
+
         for (let i = 0; i < curNumStr.length; i++) {
             let curDigit = Number(curNumStr[i]);
 
@@ -28,5 +29,4 @@ function equalSumsEvenOddPosition(input) {
 
 }
 
-equalSumsEvenOddPosition(["100000",
-"100050"]);
+equalSumsEvenOddPosition(["100000", "100050"]);

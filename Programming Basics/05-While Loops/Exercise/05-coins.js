@@ -1,4 +1,5 @@
 function coins(input) {
+
     let moneyInLv = Number(input[0]);
     let money = Math.trunc(moneyInLv * 100);
     let counter = 0;
@@ -21,9 +22,12 @@ function coins(input) {
         } else if (money >= 1) {
             money -= 1;
         }
+        
         counter++;
     }
+
     console.log(counter);
+
 }
 
 coins(["1.23"]);

@@ -1,6 +1,8 @@
 function fruitOrVegetable(input) {
-let type = input[0];
-    switch(type) {
+
+    let type = input[0];
+
+    switch (type) {
         case "banana":
         case "apple":
         case "kiwi":
@@ -11,8 +13,9 @@ let type = input[0];
         case "cucumber":
         case "pepper":
         case "carrot": console.log("vegetable"); break;
-        default: console.log("unknown")
+        default: console.log("unknown"); break;
     }
 
 }
-fruitOrVegetable(["mango"])
+
+fruitOrVegetable(["mango"]);

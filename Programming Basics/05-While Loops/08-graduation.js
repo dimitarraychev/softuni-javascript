@@ -1,4 +1,5 @@
 function graduation(input) {
+
     let index = 0;
     let name = input[index];
     index++;
@@ -20,18 +21,20 @@ function graduation(input) {
             }
             continue;
         }
+
         avgGrade += grade;
         klas++;
     }
 
     if (!excluded) {
-    console.log(`${name} graduated. Average grade: ${(avgGrade / 12).toFixed(2)}`);
+        console.log(`${name} graduated. Average grade: ${(avgGrade / 12).toFixed(2)}`);
     } else {
-    console.log(`${name} has been excluded at ${klas} grade`);
+        console.log(`${name} has been excluded at ${klas} grade`);
     }
+
 }
 
 graduation(["Gosho",
-"5",
-"5.5",
-"6","5.43", "5.5", "6", "5.55", "5", "6", "6", "5.43", "5"]);
+    "5",
+    "5.5",
+    "6", "5.43", "5.5", "6", "5.55", "5", "6", "6", "5.43", "5"]);

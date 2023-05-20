@@ -1,4 +1,5 @@
 function changeBureau(input) {
+    
     let bitcoin = Number(input[0]);
     let yuan = Number(input[1]);
     let comission = Number(input[2]);

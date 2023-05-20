@@ -1,9 +1,11 @@
 function workout(input) {
+
     let index = 0;
     let days = Number(input[index]);
     index++;
     let kmDay1 = Number(input[index]);
     index++;
+    
     let kmPerDay = 0;
     let kmLastDay = kmDay1;
     let totalKm = kmDay1;
@@ -25,9 +27,9 @@ function workout(input) {
 }
 
 workout(["5",
-"30",
-"10",
-"15",
-"20",
-"5",
-"12"]);
+    "30",
+    "10",
+    "15",
+    "20",
+    "5",
+    "12"]);

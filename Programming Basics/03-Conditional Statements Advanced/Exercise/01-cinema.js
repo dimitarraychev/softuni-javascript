@@ -1,4 +1,5 @@
-function cinema (input) {
+function cinema(input) {
+
     let movieType = input[0];
     let rows = Number(input[1]);
     let cols = Number(input[2]);
@@ -14,7 +15,8 @@ function cinema (input) {
         ticketsPrice = ticketsCount * 5;
     }
 
-console.log(`${ticketsPrice.toFixed(2)} leva`);
+    console.log(`${ticketsPrice.toFixed(2)} leva`);
+    
 }
 
 cinema(["Premiere", "10", "19"]);

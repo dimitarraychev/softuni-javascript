@@ -1,8 +1,10 @@
 function shopping(input) {
+
     let budget = Number(input[0]);
     let videoCards = Number(input[1]);
     let processors = Number(input[2]);
     let rams = Number(input[3]);
+    
     let videoCardsPrice = videoCards * 250;
     let processorsPrice = processors * (0.35 * videoCardsPrice);
     let ramsPrice = rams * (0.1 * videoCardsPrice);

@@ -1,4 +1,5 @@
-function mountainRun (input) {
+function mountainRun(input) {
+    
     let record = Number(input[0]);
     let meters = Number(input[1]);
     let secsPerM = Number(input[2]);
@@ -16,5 +17,5 @@ function mountainRun (input) {
 }
 
 mountainRun(["10164",
-"1400",
-"25"]);
+    "1400",
+    "25"]);

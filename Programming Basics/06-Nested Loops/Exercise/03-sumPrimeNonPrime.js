@@ -1,7 +1,9 @@
 function sumPrimeNonPrime(input) {
+
     let index = 0;
     let command = input[index];
     index++;
+
     let sumPrime = 0;
     let sumNonPrime = 0;
 
@@ -19,15 +21,17 @@ function sumPrimeNonPrime(input) {
 
         for (let i = 2; i < curNum; i++) {
             if (curNum % i === 0) {
-            isPrime = false;
-            break;
+                isPrime = false;
+                break;
             }
         }
+
         if (isPrime) {
             sumPrime += curNum;
         } else {
             sumNonPrime += curNum;
         }
+
         command = input[index];
         index++;
     }
@@ -38,9 +42,9 @@ function sumPrimeNonPrime(input) {
 }
 
 sumPrimeNonPrime(["3",
-"9",
-"0",
-"7",
-"19",
-"4",
-"stop"]);
+    "9",
+    "0",
+    "7",
+    "19",
+    "4",
+    "stop"]);

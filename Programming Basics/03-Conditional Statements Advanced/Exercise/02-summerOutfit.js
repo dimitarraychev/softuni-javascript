@@ -1,4 +1,5 @@
 function summerOutfit(input) {
+
     let degrees = Number(input[0]);
     let partOfDay = input[1];
 
@@ -10,7 +11,7 @@ function summerOutfit(input) {
             if (degrees <= 18) {
                 outfit = "Sweatshirt";
                 shoes = "Sneakers";
-            } else if (degrees <=24) {
+            } else if (degrees <= 24) {
                 outfit = "Shirt";
                 shoes = "Moccasins";
             } else {
@@ -22,7 +23,7 @@ function summerOutfit(input) {
             if (degrees <= 18) {
                 outfit = "Shirt";
                 shoes = "Moccasins";
-            } else if (degrees <=24) {
+            } else if (degrees <= 24) {
                 outfit = "T-Shirt";
                 shoes = "Sandals";
             } else {
@@ -31,12 +32,13 @@ function summerOutfit(input) {
             }
             break;
         case "Evening":
-                outfit = "Shirt";
-                shoes = "Moccasins";
+            outfit = "Shirt";
+            shoes = "Moccasins";
             break;
     }
 
     console.log(`It's ${degrees} degrees, get your ${outfit} and ${shoes}.`);
+    
 }
 
 summerOutfit(["16", "Morning"]);

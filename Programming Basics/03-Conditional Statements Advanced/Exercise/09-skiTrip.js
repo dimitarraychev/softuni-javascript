@@ -1,4 +1,5 @@
-function skiTrip (input) {
+function skiTrip(input) {
+
    let days = Number(input[0]);
    let room = input[1];
    let rate = input[2];
@@ -30,15 +31,16 @@ function skiTrip (input) {
             totalPrice *= 0.8;
          }
          break;
-        
    }
-   
+
    if (rate === "positive") {
       totalPrice *= 1.25;
    } else {
       totalPrice *= 0.9;
    }
+
    console.log(totalPrice.toFixed(2));
+   
 }
 
 skiTrip(["14", "apartment", "positive"]);

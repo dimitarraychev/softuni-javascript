@@ -1,4 +1,5 @@
 function careOfPuppy(input) {
+    
     let index = 0;
     let boughtFood = input[index] * 1000;
     index++;
@@ -24,10 +25,10 @@ function careOfPuppy(input) {
 }
 
 careOfPuppy(["4",
-"130",
-"345",
-"400",
-"180",
-"230",
-"120",
-"Adopted"]);
+    "130",
+    "345",
+    "400",
+    "180",
+    "230",
+    "120",
+    "Adopted"]);

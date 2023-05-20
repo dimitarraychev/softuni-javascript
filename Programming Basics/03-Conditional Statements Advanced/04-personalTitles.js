@@ -1,4 +1,5 @@
-function personalTitles (input) {
+function personalTitles(input) {
+
     let age = Number(input[0]);
     let gender = input[1];
 
@@ -6,8 +7,8 @@ function personalTitles (input) {
         if (gender === "m") {
             console.log("Mr.");
         } else {
-            console.log("Ms.")
-        } 
+            console.log("Ms.");
+        }
     } else {
         if (gender === "m") {
             console.log("Master");
@@ -17,4 +18,5 @@ function personalTitles (input) {
     }
 
 }
+
 personalTitles(["25", "f"]);

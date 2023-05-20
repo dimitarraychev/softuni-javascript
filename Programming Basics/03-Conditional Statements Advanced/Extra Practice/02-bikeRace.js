@@ -1,10 +1,11 @@
-function bikeRace (input) {
+function bikeRace(input) {
+    
     let juniors = Number(input[0]);
     let seniors = Number(input[1]);
     let track = input[2];
     let jrTax = 0;
     let srTax = 0;
-    
+
     switch (track) {
         case "trail":
             jrTax = 5.50 * juniors;

@@ -1,4 +1,5 @@
 function sleepyTomCat(input) {
+
     let daysOff = Number(input[0]);
     let workDays = 365 - daysOff;
     let play1 = workDays * 63;
@@ -19,4 +20,4 @@ function sleepyTomCat(input) {
 
 }
 
-sleepyTomCat(["113"])
+sleepyTomCat(["113"]);

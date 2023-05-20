@@ -1,4 +1,5 @@
 function sumSeconds(input) {
+
     let time1 = Number(input[0]);
     let time2 = Number(input[1]);
     let time3 = Number(input[2]);
@@ -13,5 +14,6 @@ function sumSeconds(input) {
     }else {
         console.log(`${mins}:${secs}`);
     }
+    
 }
 sumSeconds(["35", "45", "44"]);

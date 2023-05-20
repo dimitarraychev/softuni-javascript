@@ -1,4 +1,5 @@
 function minNumber(input) {
+
     let index = 0;
     let command = input[index];
     index++;
@@ -7,11 +8,11 @@ function minNumber(input) {
     while (command !== "Stop") {
         let currNum = Number(command);
         if (currNum < minNum) {
-            minNum = currNum
+            minNum = currNum;
         }
 
         command = input[index];
-        index++
+        index++;
     }
 
     console.log(minNum);

@@ -1,4 +1,5 @@
 function christmasPreparation(input) {
+    
     let paper = Number(input[0]);
     let fabric = Number(input[1]);
     let glue = Number(input[2]);
@@ -16,6 +17,6 @@ function christmasPreparation(input) {
 }
 
 christmasPreparation(["2",
-"3",
-"2.5",
-"25"]);
+    "3",
+    "2.5",
+    "25"]);

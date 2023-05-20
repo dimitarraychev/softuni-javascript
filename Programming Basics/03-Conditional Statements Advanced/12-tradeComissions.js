@@ -1,6 +1,8 @@
-function tradeComissions (input) {
+function tradeComissions(input) {
+
     let city = input[0];
     let sales = Number(input[1]);
+
     let comission = 0;
 
     if (sales >= 0 && sales <= 500) {
@@ -19,7 +21,7 @@ function tradeComissions (input) {
                 break;
             default:
                 console.log("error");
-                break;    
+                break;
         }
     } else if (sales >= 500 && sales <= 1000) {
         switch (city) {
@@ -37,8 +39,8 @@ function tradeComissions (input) {
                 break;
             default:
                 console.log("error");
-                break;    
-        }  
+                break;
+        }
     } else if (sales >= 1000 && sales <= 10000) {
         switch (city) {
             case "Sofia":
@@ -55,8 +57,8 @@ function tradeComissions (input) {
                 break;
             default:
                 console.log("error");
-                break;    
-        }  
+                break;
+        }
     } else if (sales > 10000) {
         switch (city) {
             case "Sofia":
@@ -73,11 +75,12 @@ function tradeComissions (input) {
                 break;
             default:
                 console.log("error");
-                break;    
-        }  
+                break;
+        }
     } else {
         console.log("error");
     }
 
 }
+
 tradeComissions(["Plovdiv", "499.99"]);

@@ -1,4 +1,5 @@
 function salary(input) {
+    
     let tabs = Number(input[0]);
     let salary = Number(input[1]);
 
@@ -20,11 +21,11 @@ function salary(input) {
 }
 
 salary(["10",
-"750",
-"Facebook",
-"Dev.bg",
-"Instagram",
-"Facebook",
-"Reddit",
-"Facebook",
-"Facebook"]);
+    "750",
+    "Facebook",
+    "Dev.bg",
+    "Instagram",
+    "Facebook",
+    "Reddit",
+    "Facebook",
+    "Facebook"]);

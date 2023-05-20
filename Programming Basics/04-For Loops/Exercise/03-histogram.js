@@ -1,11 +1,13 @@
 function histogram(input) {
+
     let n = Number(input[0]);
+    
     let count1 = 0;
     let count2 = 0;
-    let count3 = 0; 
+    let count3 = 0;
     let count4 = 0;
     let count5 = 0;
-    
+
     for (let i = 1; i <= n; i++) {
         let curNum = Number(input[i]);
 
@@ -19,7 +21,7 @@ function histogram(input) {
             count4++;
         } else {
             count5++;
-        } 
+        }
 
     }
 
@@ -37,4 +39,4 @@ function histogram(input) {
 
 }
 
-histogram(["20", "53", "7", "56", "180", "450", "920", "12", "7" , "150", "250", "680", "2", "600", "200"]);
+histogram(["20", "53", "7", "56", "180", "450", "920", "12", "7", "150", "250", "680", "2", "600", "200"]);

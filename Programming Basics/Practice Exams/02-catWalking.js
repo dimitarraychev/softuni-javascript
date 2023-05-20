@@ -1,4 +1,5 @@
 function catWalking(input) {
+
     let walkMins = Number(input[0]);
     let walkQty = Number(input[1]);
     let eatenCal = Number(input[2]);
@@ -10,7 +11,6 @@ function catWalking(input) {
     } else {
         console.log(`No, the walk for your cat is not enough. Burned calories per day: ${burntCal}.`);
     }
-
 
 }
 

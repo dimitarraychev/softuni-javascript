@@ -1,4 +1,5 @@
 function pipesInPool(input) {
+
     let v = Number(input[0]);
     let p1 = Number(input[1]);
     let p2 = Number(input[2]);

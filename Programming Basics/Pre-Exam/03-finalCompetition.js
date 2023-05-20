@@ -1,4 +1,5 @@
 function finalCompetition(input) {
+
     let dancers = Number(input[0]);
     let points = Number(input[1]);
     let season = input[2];
@@ -20,13 +21,15 @@ function finalCompetition(input) {
             prize *= 0.85;
         }
     }
+
     let charity = prize * 0.75;
+
     console.log(`Charity - ${charity.toFixed(2)}`);
     console.log(`Money per dancer - ${((prize * 0.25) / dancers).toFixed(2)}`);
 
 }
 
 finalCompetition(["25",
-"98",
-"winter",
-"Bulgaria"]);
+    "98",
+    "winter",
+    "Bulgaria"]);

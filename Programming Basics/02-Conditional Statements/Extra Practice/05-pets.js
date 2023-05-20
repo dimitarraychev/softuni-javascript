@@ -1,4 +1,5 @@
 function pets(input) {
+
     let days = Number(input[0]);
     let leftFood = Number(input[1]);
     let dogFood = Number(input[2]) * days;
@@ -7,7 +8,7 @@ function pets(input) {
 
     let neededFood = dogFood + catFood + turtleFood;
 
-    if (leftFood >= neededFood ) {
+    if (leftFood >= neededFood) {
         let excess = leftFood - neededFood;
         console.log(`${Math.floor(excess)} kilos of food left.`);
     } else {

@@ -1,6 +1,8 @@
-function journey (input) {
+function journey(input) {
+
     let budget = Number(input[0]);
     let season = input[1];
+
     let price = 0;
     let destination = "";
     let type = "";
@@ -24,7 +26,7 @@ function journey (input) {
             price = budget * 0.8;
             destination = "Balkans";
             type = "Hotel";
-        }   
+        }
     } else {
         price = budget * 0.9;
         destination = "Europe";
@@ -36,4 +38,4 @@ function journey (input) {
 
 }
 
-journey(["1500", "summer"])
+journey(["1500", "summer"]);

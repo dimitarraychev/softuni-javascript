@@ -1,7 +1,9 @@
-function newHome (input) {
+function newHome(input) {
+
     let flower = input[0];
     let qty = Number(input[1]);
     let budget = Number(input[2]);
+
     let totalPrice = 0;
 
     switch (flower) {
@@ -18,7 +20,7 @@ function newHome (input) {
             totalPrice = qty * 3;
             break;
         case "Gladiolus":
-            totalPrice = qty * 2.5;            
+            totalPrice = qty * 2.5;
             break;
     }
 
@@ -26,7 +28,7 @@ function newHome (input) {
         totalPrice *= 0.9;
     } else if (flower === "Dahlias" && qty > 90) {
         totalPrice *= 0.85;
-    } else if (flower === "Tulips" && qty > 80 ) {
+    } else if (flower === "Tulips" && qty > 80) {
         totalPrice *= 0.85;
     } else if (flower === "Narcissus" && qty < 120) {
         totalPrice *= 1.15;
@@ -34,15 +36,14 @@ function newHome (input) {
         totalPrice *= 1.2;
     }
 
-  
-
     if (budget >= totalPrice) {
         let difference = budget - totalPrice;
-        console.log(`Hey, you have a great garden with ${qty} ${flower} and ${difference.toFixed(2)} leva left.`)
+        console.log(`Hey, you have a great garden with ${qty} ${flower} and ${difference.toFixed(2)} leva left.`);
     } else {
         let difference = totalPrice - budget;
-        console.log(`Not enough money, you need ${difference.toFixed(2)} leva more.`)
+        console.log(`Not enough money, you need ${difference.toFixed(2)} leva more.`);
     }
+
 }
 
 newHome(["Roses", "55", "250"]);

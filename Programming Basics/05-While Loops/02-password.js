@@ -1,15 +1,16 @@
 function password(input) {
+
     let index = 0;
     let user = input[index];
-    index++
+    index++;
     let pass = input[index];
-    index++
+    index++;
     let tempPass = input[index];
-    index++
+    index++;
 
     while (tempPass !== pass) {
         tempPass = input[index];
-        index++
+        index++;
     }
 
     console.log(`Welcome ${user}!`);
@@ -17,7 +18,7 @@ function password(input) {
 }
 
 password(["Nakov",
-"1234",
-"Pass",
-"1324",
-"1234"]);
+    "1234",
+    "Pass",
+    "1324",
+    "1234"]);

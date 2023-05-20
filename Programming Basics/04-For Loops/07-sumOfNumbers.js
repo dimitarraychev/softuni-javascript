@@ -1,4 +1,5 @@
 function sumOfNumbers(input) {
+
     let num = String(input[0]);
     let sum = 0;
 

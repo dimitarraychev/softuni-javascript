@@ -1,4 +1,5 @@
 function everest(input) {
+
     let index = 0;
     let command = input[index];
     index++;
@@ -32,8 +33,9 @@ function everest(input) {
         console.log("Failed!")
         console.log(`${totalMeters}`);
     }
+    
 }
 
 everest(["Yes",
-"700",
-"END"]);
+    "700",
+    "END"]);

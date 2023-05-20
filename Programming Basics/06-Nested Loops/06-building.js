@@ -1,4 +1,5 @@
 function building(input) {
+
     let floors = Number(input[0]);
     let rooms = Number(input[1]);
 
@@ -13,6 +14,7 @@ function building(input) {
                 buffer += `A${x}${y} `;
             }
         }
+
         console.log(buffer);
     }
 

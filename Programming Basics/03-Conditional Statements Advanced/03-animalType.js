@@ -1,7 +1,8 @@
 function animalType(input) {
+
     let animal = input[0];
 
-    switch(animal) {
+    switch (animal) {
         case "dog":
             console.log("mammal");
             break;
@@ -10,8 +11,9 @@ function animalType(input) {
         case "snake":
             console.log("reptile");
             break;
-        default : console.log("unknown");          
-        }
+        default: console.log("unknown");
+    }
+    
 }
 
-animalType(["cat"])
+animalType(["cat"]);

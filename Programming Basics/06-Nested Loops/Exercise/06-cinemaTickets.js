@@ -1,4 +1,5 @@
 function cinemaTickets(input) {
+
     let index = 0;
     let command = input[index];
     index++;
@@ -39,28 +40,31 @@ function cinemaTickets(input) {
         command = input[index];
         index++;
     }
+
     let totalTickets = studentTickets + standardTickets + kidTickets;
+
     console.log(`Total tickets: ${totalTickets}`);
     console.log(`${(studentTickets / totalTickets * 100).toFixed(2)}% student tickets.`);
     console.log(`${(standardTickets / totalTickets * 100).toFixed(2)}% standard tickets.`);
     console.log(`${(kidTickets / totalTickets * 100).toFixed(2)}% kids tickets.`);
+
 }
 
 cinemaTickets(["Taxi",
-"10",
-"standard",
-"kid",
-"student",
-"student",
-"standard",
-"standard",
-"End",
-"Scary Movie",
-"6",
-"student",
-"student",
-"student",
-"student",
-"student",
-"student",
-"Finish"]);
+    "10",
+    "standard",
+    "kid",
+    "student",
+    "student",
+    "standard",
+    "standard",
+    "End",
+    "Scary Movie",
+    "6",
+    "student",
+    "student",
+    "student",
+    "student",
+    "student",
+    "student",
+    "Finish"]);

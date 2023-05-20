@@ -1,8 +1,10 @@
 function tournamentOfChristmas(input) {
+
     let index = 0;
     let days = Number(input[index]);
     index++;
-    let totalMoney = 0; 
+
+    let totalMoney = 0;
     let dayW = 0;
     let dayL = 0;
 
@@ -17,7 +19,7 @@ function tournamentOfChristmas(input) {
             let sport = command;
             let result = input[index];
             index++;
- 
+
             if (result === "win") {
                 wins++;
                 money += 20;
@@ -28,8 +30,6 @@ function tournamentOfChristmas(input) {
             index++;
         }
 
-        
-
         if (wins > losses) {
             dayW++;
             totalMoney += money * 1.1;
@@ -37,7 +37,6 @@ function tournamentOfChristmas(input) {
             dayL++;
             totalMoney += money;
         }
-
     }
 
     if (dayW > dayL) {
@@ -50,17 +49,17 @@ function tournamentOfChristmas(input) {
 }
 
 tournamentOfChristmas(["2",
-"volleyball",
-"win",
-"football",
-"lose",
-"basketball",
-"win",
-"Finish",
-"golf",
-"win",
-"tennis",
-"win",
-"badminton",
-"win",
-"Finish"]);
+    "volleyball",
+    "win",
+    "football",
+    "lose",
+    "basketball",
+    "win",
+    "Finish",
+    "golf",
+    "win",
+    "tennis",
+    "win",
+    "badminton",
+    "win",
+    "Finish"]);

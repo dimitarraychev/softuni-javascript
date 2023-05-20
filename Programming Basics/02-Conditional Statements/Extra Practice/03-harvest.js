@@ -1,4 +1,5 @@
 function harvest(input) {
+
     let x = Number(input[0]);
     let y = Number(input[1]);
     let z = Number(input[2]);
@@ -18,4 +19,4 @@ function harvest(input) {
 
 }
 
-harvest(["650", "2", "175", "3"])
+harvest(["650", "2", "175", "3"]);

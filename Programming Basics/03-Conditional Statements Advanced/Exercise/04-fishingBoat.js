@@ -1,7 +1,9 @@
-function fishingBoat (input) {
+function fishingBoat(input) {
+
     let budget = Number(input[0]);
     let season = input[1];
     let group = Number(input[2]);
+
     let price = 0;
 
     switch (season) {
@@ -36,7 +38,7 @@ function fishingBoat (input) {
         needMoney = price - budget;
         console.log(`Not enough money! You need ${needMoney.toFixed(2)} leva.`);
     }
-  
+
 }
 
-fishingBoat(["3000", "Summer", "11"])
+fishingBoat(["3000", "Summer", "11"]);

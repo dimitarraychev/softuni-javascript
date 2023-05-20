@@ -1,4 +1,5 @@
 function sequence2kPlus1(input) {
+
     let index = 0;
     let num = Number(input[index]);
 
@@ -10,4 +11,5 @@ function sequence2kPlus1(input) {
     }
 
 }
+
 sequence2kPlus1(["3"]);

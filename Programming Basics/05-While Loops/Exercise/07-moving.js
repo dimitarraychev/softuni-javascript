@@ -1,4 +1,5 @@
 function moving(input) {
+
     let index = 0;
     let w = Number(input[index]);
     index++;
@@ -31,10 +32,9 @@ function moving(input) {
 
 }
 
-moving(["10", 
-"1",
-"2",
-"4", 
-"6",
-"Done"])
-
+moving(["10",
+    "1",
+    "2",
+    "4",
+    "6",
+    "Done"]);

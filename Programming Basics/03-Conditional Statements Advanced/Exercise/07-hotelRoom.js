@@ -1,6 +1,8 @@
-function hotelRoom (input) {
+function hotelRoom(input) {
+
     let month = input[0];
     let nights = Number(input[1]);
+    
     let priceStudio = 0;
     let priceApt = 0;
 
@@ -9,8 +11,8 @@ function hotelRoom (input) {
             priceStudio = nights * 50;
             priceApt = nights * 65;
         } else if (nights <= 14) {
-        priceStudio = (nights * 50) * 0.95;
-        priceApt = nights * 65;
+            priceStudio = (nights * 50) * 0.95;
+            priceApt = nights * 65;
         } else {
             priceStudio = (nights * 50) * 0.7;
             priceApt = (nights * 65) * 0.9;

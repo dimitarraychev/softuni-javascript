@@ -1,4 +1,5 @@
 function deerOfSanta(input) {
+    
     let days = Number(input[0]);
     let totalFood = Number(input[1]);
     let d1FoodPerDay = Number(input[2]);
@@ -19,8 +20,8 @@ function deerOfSanta(input) {
 }
 
 deerOfSanta(["5",
-"10",
-"2.1",
-"0.8",
-"11"]);
+    "10",
+    "2.1",
+    "0.8",
+    "11"]);
 

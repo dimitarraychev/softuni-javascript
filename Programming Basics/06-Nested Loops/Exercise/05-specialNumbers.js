@@ -1,4 +1,5 @@
 function specialNumbers(input) {
+
     let n = Number(input[0]);
     let specialNumbers = "";
 
@@ -9,6 +10,7 @@ function specialNumbers(input) {
         for (let i = 0; i < 4; i++) {
             let digit = str.charAt(i);
             let div = n / digit;
+            
             if ((div - Math.floor(div)) === 0) {
                 special++;
             } else {
@@ -17,9 +19,9 @@ function specialNumbers(input) {
 
             if (special === 4) {
                 specialNumbers += num + " ";
-            } 
-        }   
-        
+            }
+        }
+
 
     }
 

@@ -1,9 +1,11 @@
 function examPreparation(input) {
+
     let index = 0;
     let badGrades = Number(input[index]);
     index++;
     let command = input[index];
     index++;
+
     let badGradeCounter = 0;
     let gradeCounter = 0;
     let avgGrade = 0;
@@ -23,10 +25,11 @@ function examPreparation(input) {
             }
         }
         gradeCounter++;
-        avgGrade += taskGrade
+        avgGrade += taskGrade;
         command = input[index];
         index++;
     }
+
     if (isNeedBreak) {
         console.log(`You need a break, ${badGradeCounter} poor grades.`);
     } else {
@@ -34,6 +37,7 @@ function examPreparation(input) {
         console.log(`Number of problems: ${gradeCounter}`);
         console.log(`Last problem: ${taskName}`);
     }
+    
 }
 
 examPreparation(["3",

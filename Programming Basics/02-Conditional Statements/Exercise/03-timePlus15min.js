@@ -1,4 +1,5 @@
 function timePlus15mins(input) {
+
     let hours = Number(input[0]);
     let mins = Number(input[1]);
 
@@ -19,4 +20,4 @@ function timePlus15mins(input) {
     }
 
 }
-timePlus15mins(["1", "46"])
+timePlus15mins(["1", "46"]);

@@ -3,6 +3,7 @@ function sumOf2Numbers(input) {
     let start = Number(input[0]);
     let end = Number(input[1]);
     let magicNum = Number(input[2]);
+    
     let combinations = 0;
     let isFound;
 
@@ -27,6 +28,5 @@ function sumOf2Numbers(input) {
 }
 
 sumOf2Numbers(["23",
-"24",
-"20"]);
-
+    "24",
+    "20"]);

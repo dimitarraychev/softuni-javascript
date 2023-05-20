@@ -1,5 +1,7 @@
 function trekkingMania(input) {
+
     let numOfGroups = Number(input)[0];
+
     let group1 = 0;
     let group2 = 0;
     let group3 = 0;
@@ -36,7 +38,6 @@ function trekkingMania(input) {
 
     console.log(`${g1p.toFixed(2)}% \n ${g2p.toFixed(2)}% \n ${g3p.toFixed(2)}% \n ${g4p.toFixed(2)}% \n ${g5p.toFixed(2)}%`);
 
-
 }
 
 trekkingMania(["10",
@@ -49,4 +50,4 @@ trekkingMania(["10",
 "17",
 "37",
 "40",
-"78"])
+"78"]);

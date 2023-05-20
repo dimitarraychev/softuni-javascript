@@ -1,4 +1,5 @@
 function bonusPoints(input) {
+
     let initialPoints = Number(input[0]);
     let bonusPoints = 0;
 
@@ -18,5 +19,6 @@ function bonusPoints(input) {
 
     console.log(bonusPoints);
     console.log(initialPoints + bonusPoints);
+    
 }
 bonusPoints(["20"]);

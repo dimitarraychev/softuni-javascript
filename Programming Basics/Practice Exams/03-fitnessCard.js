@@ -1,4 +1,5 @@
 function fitnessCard(input) {
+    
     let budget = Number(input[0]);
     let gender = input[1];
     let age = Number(input[2]);

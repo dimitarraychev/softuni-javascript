@@ -1,4 +1,5 @@
 function sumNumbers(input) {
+    
     let index = 0;
     let num = input[index];
     index++;
@@ -9,7 +10,7 @@ function sumNumbers(input) {
         index++;
         sum += currNum;
     }
-    
+
     console.log(sum);
 
 }
