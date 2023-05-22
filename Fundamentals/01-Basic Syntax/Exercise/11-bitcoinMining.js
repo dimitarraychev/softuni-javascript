@@ -5,7 +5,6 @@ function bitcoinMining(input) {
     let totalCash = 0;
     let btcBought = 0;
     let isBought = false;
-    let isLogged = false;
     let dayPurchased = 0;
 
     for (let day = 1; day <= input.length; day++) {
@@ -19,20 +18,15 @@ function bitcoinMining(input) {
 
         totalCash += cashToday;
 
-        if (totalCash >= btcPrice) {
+        if (totalCash >= btcPrice && isBought === false) {
             isBought = true;
-            if (isLogged === false) {
-                dayPurchased = day;
-                isLogged = true;
-            }
+            dayPurchased = day;
         }
     }
 
     if (isBought) {
         btcBought = Math.trunc(totalCash / btcPrice);
         totalCash -= btcBought * btcPrice;
-    } else {
-        btcBought = 0;
     }
 
     console.log(`Bought bitcoins: ${btcBought}`);
