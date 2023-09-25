@@ -1,18 +1,24 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin: 0;
 }
 
 section {
     background-color: #E6E5E5;
-    margin-top: 0;
+    margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
     padding: 50px;
 }
 
 h3 {
     color: #234468;
+    font-weight: bold;
 }
 
 ol li {
-    text-decoration: underline;
+    text-align: left;
+    border-bottom: 1px solid black;
+    padding: 5px;
 }
