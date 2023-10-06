@@ -74,7 +74,6 @@ function validate() {
                 isValidPass = true;
                 passwordRef.style.borderColor = '';
                 return confirmPassRef.style.borderColor = '';
-
             }
 
             isValidPass = false;
