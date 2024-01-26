@@ -1,0 +1,23 @@
+<section id="search">
+    <h1>Search</h1>
+    <form action="/search" method="GET" class="form">
+        <input type="text" class="search" name="title" placeholder="Title..." value="{{title}}">
+        <input type="text" name="genre" class="genre" placeholder="Genre..." value="{{genre}}">
+        <input type="number" name="year" class="year" placeholder="Year..." value="{{year}}">
+        <input type="submit" value="search">
+    </form>
+</section>
+
+<section id="catalog">
+    <div class="band">
+
+        {{#each movies}}
+            {{>movie}}
+        {{else}}
+        <div class="no-posts">
+            <p class="no-offer">There are no movies matched...</p>
+        </div>
+        {{/each}}
+
+    </div>
+</section>
