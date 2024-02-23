@@ -1,0 +1,19 @@
+<main class="dashboard">
+    <section id="dashboard">
+        <h2>Minerals and Gems</h2>
+        <ul class="card-wrapper">
+
+            {{#each stones}}
+            {{>stone}}
+            {{/each}}
+
+        </ul>
+
+        {{#unless stones}}
+        <div id="no-post">
+            <h2>There are no gems and minerals! </h2>
+        </div>
+        {{/unless}}
+
+    </section>
+</main>

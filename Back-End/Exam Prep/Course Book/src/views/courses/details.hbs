@@ -1,0 +1,35 @@
+<div class="details-container">
+    <div class="details-container-image">
+        <img
+            src="{{image}}">
+    </div>
+    <div class="details-container-info">
+        <h2>Title: {{title}}</h2>
+        <h3>Type: {{type}}</h3>
+        <h3>Certificate: {{certificate}}</h3>
+        <h3>Price: €{{price}}</h3>
+        <h3>By: {{owner.username}}</h3>
+        {{#if signedUpUsers}}
+        <h4>Signed By: {{signedUpUsers}}</h4>
+        {{else}}
+        <h4>Nobody has signed in for this course yet</h4>
+        {{/if}}
+    </div>
+    <div class="details-container-content">
+        <p>{{description}}</p>
+    </div>
+    {{#if isLoggedIn}}
+    <div class="btn-container">
+        {{#if isOwner}}
+            <a href="/courses/{{_id}}/edit">Edit</a>
+            <a href="/courses/{{_id}}/delete">Delete</a>
+        {{else}}
+            {{#unless isSignedUp}}
+            <a href="/courses/{{_id}}/signup">Sign up</a>
+            {{else}}
+            <p class="sign-up">You've already signed up for this course!</p>
+            {{/unless}}
+        {{/if}}
+    </div>
+    {{/if}}
+</div>
